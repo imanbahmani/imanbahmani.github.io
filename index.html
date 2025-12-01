@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammadreza Bahmani | محمدرضا بهمنی</title>
-    <meta name="description" content="Portfolio of Mohammadreza Bahmani - Award-winning Inventor, Researcher, and Robotics Engineer">
+    <title>Iman Bahmani | ایمان بهمنی</title>
+    <meta name="description" content="Portfolio of Iman Bahmani - Award-winning Inventor, Researcher, and Robotics Engineer">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -757,6 +757,51 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
+        /* Skills Section */
+        .skills-grid {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .skill-category {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .skill-category h4 {
+            font-size: 1rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            padding: 10px 20px;
+            background: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: rgba(212, 175, 55, 0.1);
+            border-color: var(--gold);
+            color: var(--gold-light);
+            transform: translateY(-3px);
+        }
+
         .footer-logo {
             font-family: var(--font-display);
             font-size: 2rem;
@@ -876,8 +921,8 @@
             <div class="hero-badge">
                 <span data-en="Award-Winning Innovator" data-fa="نوآور برگزیده" data-de="Preisgekrönter Innovator"></span>
             </div>
-            <h1 class="hero-name font-display" data-en="Mohammadreza Bahmani" data-fa="محمدرضا بهمنی" data-de="Mohammadreza Bahmani"></h1>
-            <p class="hero-title" data-en="Inventor • Researcher • Robotics Engineer • Entrepreneur" data-fa="مخترع • پژوهشگر • مهندس رباتیک • کارآفرین" data-de="Erfinder • Forscher • Robotik-Ingenieur • Unternehmer"></p>
+            <h1 class="hero-name font-display" data-en="Iman Bahmani" data-fa="ایمان بهمنی" data-de="Iman Bahmani"></h1>
+            <p class="hero-title" data-en="Inventor • Researcher • Robotics Engineer • Full Stack Developer" data-fa="مخترع • پژوهشگر • مهندس رباتیک • توسعه‌دهنده فول‌استک" data-de="Erfinder • Forscher • Robotik-Ingenieur • Full Stack Entwickler"></p>
             
             <div class="hero-stats">
                 <div class="stat-item">
@@ -1133,10 +1178,52 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Expertise" data-fa="تخصص‌ها" data-de="Fachkenntnisse"></div>
+                <h2 class="section-title font-display" data-en="Technologies & Skills" data-fa="فناوری‌ها و مهارت‌ها" data-de="Technologien & Fähigkeiten"></h2>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-category">
+                    <h4 data-en="Programming" data-fa="برنامه‌نویسی" data-de="Programmierung">Programming</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Swift</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 data-en="Frameworks" data-fa="فریمورک‌ها" data-de="Frameworks">Frameworks</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">iOS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4 data-en="Robotics" data-fa="رباتیک" data-de="Robotik">Robotics</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Robotics98</span>
+                        <span class="skill-tag">AI/ML</span>
+                        <span class="skill-tag">Embedded Systems</span>
+                        <span class="skill-tag">Humanoid Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo font-display" data-en="Mohammadreza Bahmani" data-fa="محمدرضا بهمنی" data-de="Mohammadreza Bahmani"></div>
+            <div class="footer-logo font-display" data-en="Iman Bahmani" data-fa="ایمان بهمنی" data-de="Iman Bahmani"></div>
             
             <div class="footer-links">
                 <a href="#awards" class="footer-link" data-en="Awards" data-fa="افتخارات" data-de="Auszeichnungen"></a>
@@ -1146,7 +1233,14 @@
                 <a href="#gallery" class="footer-link" data-en="Gallery" data-fa="گالری" data-de="Galerie"></a>
             </div>
 
-            <p class="footer-copy">© 2025 Mohammadreza Bahmani. <span data-en="All Rights Reserved." data-fa="تمامی حقوق محفوظ است." data-de="Alle Rechte vorbehalten."></span></p>
+            <div class="footer-links" style="margin-bottom: 20px;">
+                <a href="mailto:imanbahmani@gmail.com" class="footer-link">📧 imanbahmani@gmail.com</a>
+                <a href="https://ir.linkedin.com/in/imanbahmani" target="_blank" class="footer-link">💼 LinkedIn</a>
+                <a href="https://virgool.io/@imanbahmani" target="_blank" class="footer-link">📝 Virgool</a>
+                <a href="https://github.com/imanbahmani" target="_blank" class="footer-link">🐙 GitHub</a>
+            </div>
+
+            <p class="footer-copy">© 2025 Iman Bahmani. <span data-en="All Rights Reserved." data-fa="تمامی حقوق محفوظ است." data-de="Alle Rechte vorbehalten."></span></p>
         </div>
     </footer>
 
