@@ -1,45 +1,1231 @@
-<h1 align="center">Hi 👋, I'm Iman Bahmani</h1>
-<h3 align="center">Full Stack Developer</h3>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammadreza Bahmani | محمدرضا بهمنی</title>
+    <meta name="description" content="Portfolio of Mohammadreza Bahmani - Award-winning Inventor, Researcher, and Robotics Engineer">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E4BA;
+            --gold-dark: #AA8C2C;
+            --bg-dark: #0A0A0F;
+            --bg-card: #12121A;
+            --bg-card-hover: #1A1A25;
+            --text-primary: #FAFAFA;
+            --text-secondary: #A0A0B0;
+            --text-muted: #606070;
+            --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E4BA 50%, #D4AF37 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0A0F 0%, #15151F 100%);
+            --shadow-gold: 0 0 60px rgba(212, 175, 55, 0.15);
+            --shadow-card: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            --font-display: 'Cormorant Garamond', serif;
+            --font-body: 'Outfit', sans-serif;
+            --font-persian: 'Vazirmatn', sans-serif;
+        }
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=imanabahmani&label=Profile%20views&color=0e75b6&style=flat" alt="imanabahmani" /> </p>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imanabahmani" alt="imanabahmani" /></a> </p>
+        html {
+            scroll-behavior: smooth;
+        }
 
-<p align="left"> <a href="https://twitter.com/imanabahmani" target="blank"><img src="https://img.shields.io/twitter/follow/imanabahmani?logo=twitter&style=for-the-badge" alt="imanabahmani" /></a> </p>
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
 
-- 🔭 I’m currently working on **Robotics98**
+        body.rtl {
+            direction: rtl;
+            font-family: var(--font-persian);
+        }
 
-- 🌱 I’m currently learning **Laravel and Vue and flutter**
+        body.rtl .font-display {
+            font-family: var(--font-persian);
+        }
 
-- 📝 I regularly write articles on [https://virgool.io/@imanbahmani](https://virgool.io/@imanbahmani)
+        /* Background Effects */
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.03;
+            background-image: 
+                radial-gradient(circle at 25% 25%, var(--gold) 1px, transparent 1px),
+                radial-gradient(circle at 75% 75%, var(--gold) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
 
-- 💬 Ask me about **Python and Android(Java) and iOS(Swift)**
+        .glow-orb {
+            position: fixed;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
 
-- 📫 How to reach me **imanbahmani@Gmail.com**
+        .glow-orb-1 {
+            top: -200px;
+            right: -200px;
+            animation: float 20s ease-in-out infinite;
+        }
 
-- 📄 Know about my experiences [https://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?t](https://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?thttps://ir.linkedin.com/in/imanbahmani?t)
+        .glow-orb-2 {
+            bottom: -300px;
+            left: -200px;
+            animation: float 25s ease-in-out infinite reverse;
+        }
 
-- ⚡ Fun fact **I think Funny**
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, 30px) scale(1.1); }
+        }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://codepen.io/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://twitter.com/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://fb.com/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://instagram.com/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://dribbble.com/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/dribbble.svg" alt="imanabahmani" height="30" width="40" /></a>
-<a href="https://medium.com/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="imanabahmani" height="30" width="40" /></a>
+        /* Language Switcher */
+        .lang-switcher {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            gap: 8px;
+            background: rgba(18, 18, 26, 0.9);
+            backdrop-filter: blur(20px);
+            padding: 8px;
+            border-radius: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
 
-  <a href="https://www.youtube.com/c/imanabahmani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="imanabahmani" height="30" width="40" /></a>
-</p>
+        body.rtl .lang-switcher {
+            right: auto;
+            left: 30px;
+        }
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/> </a> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/django/django-original.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://graphql.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" alt="graphql" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.elastic.co/kibana" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="kibana" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mariadb.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mariadb/mariadb-icon.svg" alt="mariadb" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> <a href="https://realm.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/bestofjs/bestofjs-webui/8665e8c267a0215f3159df28b33c365198101df5/public/logos/realm.svg" alt="realm" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" alt="swift" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/apps/xamarin" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/xamarin.svg" alt="xamarin" width="40" height="40"/> </a> <a href="https://zapier.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/zapier/zapier-icon.svg" alt="zapier" width="40" height="40"/> </a> </p>
+        .lang-btn {
+            padding: 10px 18px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 40px;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=imanabahmani&show_icons=true&locale=en&layout=compact" alt="imanabahmani" /></p>
+        .lang-btn:hover {
+            color: var(--text-primary);
+        }
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=imanabahmani&show_icons=true&locale=en" alt="imanabahmani" /></p>
+        .lang-btn.active {
+            background: var(--gradient-gold);
+            color: var(--bg-dark);
+        }
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=imanabahmani&" alt="imanabahmani" /></p>
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 40px;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            color: var(--gold-light);
+            margin-bottom: 40px;
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-name {
+            font-family: var(--font-display);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 1s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        body.rtl .hero-name {
+            font-family: var(--font-persian);
+            font-weight: 700;
+        }
+
+        .hero-title {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 300;
+            color: var(--text-secondary);
+            margin-bottom: 50px;
+            animation: fadeInUp 1s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease 0.6s forwards;
+            opacity: 0;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        body.rtl .stat-number {
+            font-family: var(--font-persian);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--gold);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(10px); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+            opacity: 0.5;
+        }
+
+        .section-label::before {
+            right: calc(100% + 20px);
+        }
+
+        .section-label::after {
+            left: calc(100% + 20px);
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        body.rtl .section-title {
+            font-family: var(--font-persian);
+        }
+
+        /* Awards Grid */
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .award-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: default;
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .award-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .award-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .award-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+
+        .award-title {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        body.rtl .award-title {
+            font-family: var(--font-persian);
+        }
+
+        .award-description {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .award-year {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+
+        body.rtl .award-year {
+            right: auto;
+            left: 30px;
+            font-family: var(--font-persian);
+        }
+
+        /* Featured Card (Olympiad) */
+        .featured-card {
+            grid-column: 1 / -1;
+            background: linear-gradient(135deg, var(--bg-card) 0%, rgba(212, 175, 55, 0.05) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        @media (max-width: 900px) {
+            .featured-card {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        .featured-content {
+            padding-right: 20px;
+        }
+
+        body.rtl .featured-content {
+            padding-right: 0;
+            padding-left: 20px;
+        }
+
+        .featured-visual {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .medal {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .medal-gold {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+        }
+
+        .medal-silver {
+            background: linear-gradient(135deg, #C0C0C0, #E8E8E8);
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.4);
+        }
+
+        .medal-bronze {
+            background: linear-gradient(135deg, #CD7F32, #E9967A);
+            box-shadow: 0 0 20px rgba(205, 127, 50, 0.4);
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Robots Section */
+        .robots-showcase {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 800px) {
+            .robots-showcase {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .robot-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 32px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .robot-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .robot-visual {
+            height: 300px;
+            background: linear-gradient(135deg, #1a1a25 0%, #2a2a35 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .robot-visual::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+            animation: rotate 10s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .robot-icon {
+            font-size: 8rem;
+            z-index: 1;
+            filter: drop-shadow(0 0 30px rgba(212, 175, 55, 0.3));
+        }
+
+        .robot-info {
+            padding: 40px;
+        }
+
+        .robot-name {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--gold-light);
+        }
+
+        body.rtl .robot-name {
+            font-family: var(--font-persian);
+        }
+
+        .robot-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* Media Section */
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .media-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .media-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .media-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+
+        .media-content h4 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .media-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .media-type {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(212, 175, 55, 0.15);
+            border-radius: 20px;
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            margin-top: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Patents Section */
+        .patents-container {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .patent-card {
+            flex: 1;
+            min-width: 350px;
+            max-width: 500px;
+            background: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 24px;
+            padding: 50px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .patent-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, rgba(212, 175, 55, 0.05), transparent, rgba(212, 175, 55, 0.05), transparent);
+            animation: rotate 20s linear infinite;
+        }
+
+        .patent-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .patent-number {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+
+        body.rtl .patent-number {
+            font-family: var(--font-persian);
+        }
+
+        .patent-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .patent-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: var(--bg-card);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .gallery-item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .gallery-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a25 0%, #252530 100%);
+            font-size: 3rem;
+            opacity: 0.5;
+        }
+
+        .gallery-item:nth-child(1) .gallery-placeholder {
+            font-size: 5rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 80px 0;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-logo {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+        }
+
+        body.rtl .footer-logo {
+            font-family: var(--font-persian);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-link:hover {
+            color: var(--gold);
+        }
+
+        .footer-copy {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Animations on Scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .hero {
+                padding: 100px 20px;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .lang-switcher {
+                top: 15px;
+                right: 15px;
+            }
+
+            body.rtl .lang-switcher {
+                right: auto;
+                left: 15px;
+            }
+
+            .lang-btn {
+                padding: 8px 12px;
+                font-size: 0.75rem;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+
+            .awards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="fa">فا</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span data-en="Award-Winning Innovator" data-fa="نوآور برگزیده" data-de="Preisgekrönter Innovator"></span>
+            </div>
+            <h1 class="hero-name font-display" data-en="Mohammadreza Bahmani" data-fa="محمدرضا بهمنی" data-de="Mohammadreza Bahmani"></h1>
+            <p class="hero-title" data-en="Inventor • Researcher • Robotics Engineer • Entrepreneur" data-fa="مخترع • پژوهشگر • مهندس رباتیک • کارآفرین" data-de="Erfinder • Forscher • Robotik-Ingenieur • Unternehmer"></p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label" data-en="International Awards" data-fa="افتخار بین‌المللی" data-de="Internationale Auszeichnungen"></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label" data-en="Humanoid Robots" data-fa="ربات انسان‌نما" data-de="Humanoide Roboter"></div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label" data-en="Patents" data-fa="ثبت اختراع" data-de="Patente"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span data-en="SCROLL" data-fa="اسکرول" data-de="SCROLLEN"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Achievements" data-fa="افتخارات" data-de="Auszeichnungen"></div>
+                <h2 class="section-title font-display" data-en="Honors & Awards" data-fa="افتخارات و جوایز" data-de="Ehrungen & Auszeichnungen"></h2>
+            </div>
+
+            <div class="awards-grid">
+                <!-- Featured: Olympiad -->
+                <div class="award-card featured-card reveal">
+                    <div class="featured-content">
+                        <div class="award-icon">🏆</div>
+                        <h3 class="award-title" data-en="25+ International Olympiad Awards" data-fa="۲۵+ عنوان برتر المپیادهای بین‌المللی" data-de="25+ Internationale Olympiade-Auszeichnungen"></h3>
+                        <p class="award-description" data-en="Outstanding achievements across multiple international and global olympiads, representing excellence in scientific and technical competitions on the world stage." data-fa="کسب بیش از ۲۵ عنوان برتر در المپیادهای بین‌المللی و جهانی در رشته‌های مختلف علمی و فنی، نماینده برتری در رقابت‌های علمی در سطح جهانی." data-de="Herausragende Leistungen in mehreren internationalen und globalen Olympiaden, die Exzellenz in wissenschaftlichen und technischen Wettbewerben auf der Weltbühne repräsentieren."></p>
+                    </div>
+                    <div class="featured-visual">
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-silver">🥈</div>
+                        <div class="medal medal-silver">🥈</div>
+                        <div class="medal medal-bronze">🥉</div>
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-silver">🥈</div>
+                        <div class="medal medal-bronze">🥉</div>
+                        <div class="medal medal-gold">🥇</div>
+                        <div class="medal medal-gold">🥇</div>
+                    </div>
+                </div>
+
+                <!-- Top Inventor -->
+                <div class="award-card reveal">
+                    <div class="award-icon">💡</div>
+                    <h3 class="award-title" data-en="Top National Inventor" data-fa="مخترع برتر کشور" data-de="Bester Nationaler Erfinder"></h3>
+                    <p class="award-description" data-en="Recognized as the leading inventor of the nation for groundbreaking innovations and contributions to technological advancement." data-fa="کسب عنوان مخترع برتر کشور به پاس نوآوری‌های پیشگامانه و مشارکت در پیشرفت فناوری." data-de="Anerkannt als führender Erfinder der Nation für bahnbrechende Innovationen und Beiträge zum technologischen Fortschritt."></p>
+                </div>
+
+                <!-- Top Researcher -->
+                <div class="award-card reveal">
+                    <div class="award-icon">🔬</div>
+                    <h3 class="award-title" data-en="Distinguished National Researcher" data-fa="پژوهشگر برگزیده کشور" data-de="Ausgezeichneter Nationaler Forscher"></h3>
+                    <p class="award-description" data-en="Awarded as the distinguished researcher of the country for exceptional contributions to scientific research and development." data-fa="دریافت عنوان پژوهشگر برگزیده کشور به خاطر مشارکت استثنایی در تحقیقات علمی و توسعه." data-de="Ausgezeichnet als herausragender Forscher des Landes für außergewöhnliche Beiträge zur wissenschaftlichen Forschung und Entwicklung."></p>
+                </div>
+
+                <!-- Top Student -->
+                <div class="award-card reveal">
+                    <div class="award-icon">🎓</div>
+                    <h3 class="award-title" data-en="Best Student of the Nation" data-fa="برترین دانشجوی کشور" data-de="Bester Student der Nation"></h3>
+                    <p class="award-description" data-en="Honored as the nation's best student for outstanding academic excellence and innovative achievements." data-fa="کسب افتخار برترین دانشجوی کشور به خاطر تعالی علمی و دستاوردهای نوآورانه." data-de="Ausgezeichnet als bester Student der Nation für herausragende akademische Exzellenz und innovative Leistungen."></p>
+                </div>
+
+                <!-- Top Company -->
+                <div class="award-card reveal">
+                    <div class="award-icon">🏢</div>
+                    <h3 class="award-title" data-en="Best Company - Southern Region" data-fa="برترین شرکت جنوب کشور" data-de="Bestes Unternehmen - Südliche Region"></h3>
+                    <p class="award-description" data-en="Founder and leader of the top-ranked company in the southern region, driving innovation and economic growth." data-fa="بنیان‌گذار و رهبر برترین شرکت در جنوب کشور، پیشران نوآوری و رشد اقتصادی." data-de="Gründer und Leiter des bestplatzierten Unternehmens in der südlichen Region, treibende Kraft für Innovation und Wirtschaftswachstum."></p>
+                </div>
+
+                <!-- More Awards -->
+                <div class="award-card reveal">
+                    <div class="award-icon">⭐</div>
+                    <h3 class="award-title" data-en="And Many More..." data-fa="و بسیاری دیگر..." data-de="Und Viele Mehr..."></h3>
+                    <p class="award-description" data-en="Numerous additional national and international honors, certifications, and recognitions across various fields of expertise." data-fa="افتخارات ملی و بین‌المللی متعدد، گواهینامه‌ها و تقدیرنامه‌ها در زمینه‌های مختلف تخصصی." data-de="Zahlreiche weitere nationale und internationale Ehrungen, Zertifizierungen und Anerkennungen in verschiedenen Fachgebieten."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+    <section id="patents">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Intellectual Property" data-fa="مالکیت فکری" data-de="Geistiges Eigentum"></div>
+                <h2 class="section-title font-display" data-en="Registered Patents" data-fa="ثبت اختراعات" data-de="Registrierte Patente"></h2>
+            </div>
+
+            <div class="patents-container">
+                <div class="patent-card reveal">
+                    <div class="patent-content">
+                        <div class="patent-number">01</div>
+                        <h3 class="patent-title" data-en="Top Registered Patent" data-fa="ثبت اختراع برتر اول" data-de="Erstes Top-Patent"></h3>
+                        <p class="patent-desc" data-en="Innovative technology solution recognized and registered as a top-tier national patent." data-fa="راهکار فناورانه نوآورانه که به عنوان اختراع برتر ملی ثبت شده است." data-de="Innovative Technologielösung, die als erstklassiges nationales Patent anerkannt und registriert wurde."></p>
+                    </div>
+                </div>
+
+                <div class="patent-card reveal">
+                    <div class="patent-content">
+                        <div class="patent-number">02</div>
+                        <h3 class="patent-title" data-en="Top Registered Patent" data-fa="ثبت اختراع برتر دوم" data-de="Zweites Top-Patent"></h3>
+                        <p class="patent-desc" data-en="Groundbreaking invention contributing to technological advancement and innovation." data-fa="اختراع پیشگامانه که به پیشرفت فناوری و نوآوری کمک می‌کند." data-de="Bahnbrechende Erfindung, die zum technologischen Fortschritt und zur Innovation beiträgt."></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robots Section -->
+    <section id="robots">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Robotics" data-fa="رباتیک" data-de="Robotik"></div>
+                <h2 class="section-title font-display" data-en="Humanoid Robots" data-fa="ربات‌های انسان‌نما" data-de="Humanoide Roboter"></h2>
+            </div>
+
+            <div class="robots-showcase">
+                <div class="robot-card reveal">
+                    <div class="robot-visual">
+                        <div class="robot-icon">🤖</div>
+                    </div>
+                    <div class="robot-info">
+                        <h3 class="robot-name" data-en="Humanoid Robot I" data-fa="ربات انسان‌نمای اول" data-de="Humanoider Roboter I"></h3>
+                        <p class="robot-description" data-en="First generation humanoid robot featuring advanced locomotion, human interaction capabilities, and sophisticated AI-driven behavior systems." data-fa="ربات انسان‌نمای نسل اول با قابلیت‌های حرکتی پیشرفته، تعامل با انسان و سیستم‌های رفتاری مبتنی بر هوش مصنوعی." data-de="Humanoider Roboter der ersten Generation mit fortschrittlicher Fortbewegung, Mensch-Interaktions-Fähigkeiten und ausgeklügelten KI-gesteuerten Verhaltenssystemen."></p>
+                    </div>
+                </div>
+
+                <div class="robot-card reveal">
+                    <div class="robot-visual">
+                        <div class="robot-icon">🦾</div>
+                    </div>
+                    <div class="robot-info">
+                        <h3 class="robot-name" data-en="Humanoid Robot II" data-fa="ربات انسان‌نمای دوم" data-de="Humanoider Roboter II"></h3>
+                        <p class="robot-description" data-en="Second generation humanoid robot with enhanced capabilities, improved natural language processing, and next-level human-robot interaction." data-fa="ربات انسان‌نمای نسل دوم با قابلیت‌های ارتقا یافته، پردازش زبان طبیعی بهبود یافته و تعامل انسان-ربات در سطح بعدی." data-de="Humanoider Roboter der zweiten Generation mit erweiterten Fähigkeiten, verbesserter natürlicher Sprachverarbeitung und Mensch-Roboter-Interaktion der nächsten Stufe."></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Press & Media" data-fa="رسانه‌ها" data-de="Presse & Medien"></div>
+                <h2 class="section-title font-display" data-en="Media Coverage" data-fa="پوشش رسانه‌ای" data-de="Medienberichterstattung"></h2>
+            </div>
+
+            <div class="media-grid">
+                <div class="media-card reveal">
+                    <div class="media-icon">📺</div>
+                    <div class="media-content">
+                        <h4 data-en="Television Interviews" data-fa="مصاحبه‌های تلویزیونی" data-de="Fernsehinterviews"></h4>
+                        <p data-en="Featured on national television programs discussing innovation and technology" data-fa="حضور در برنامه‌های تلویزیونی ملی با موضوع نوآوری و فناوری" data-de="Auftritte in nationalen Fernsehprogrammen über Innovation und Technologie"></p>
+                        <span class="media-type" data-en="TV" data-fa="تلویزیون" data-de="TV"></span>
+                    </div>
+                </div>
+
+                <div class="media-card reveal">
+                    <div class="media-icon">📰</div>
+                    <div class="media-content">
+                        <h4 data-en="Newspaper Features" data-fa="مقالات روزنامه‌ها" data-de="Zeitungsberichte"></h4>
+                        <p data-en="Extensive coverage in major national newspapers and publications" data-fa="پوشش گسترده در روزنامه‌ها و نشریات اصلی کشور" data-de="Umfangreiche Berichterstattung in großen nationalen Zeitungen und Publikationen"></p>
+                        <span class="media-type" data-en="Print" data-fa="چاپی" data-de="Print"></span>
+                    </div>
+                </div>
+
+                <div class="media-card reveal">
+                    <div class="media-icon">🌐</div>
+                    <div class="media-content">
+                        <h4 data-en="Online Publications" data-fa="نشریات آنلاین" data-de="Online-Publikationen"></h4>
+                        <p data-en="Featured stories and interviews on leading technology and news websites" data-fa="داستان‌ها و مصاحبه‌های ویژه در وبسایت‌های پیشرو فناوری و خبری" data-de="Berichte und Interviews auf führenden Technologie- und Nachrichtenwebsites"></p>
+                        <span class="media-type" data-en="Web" data-fa="وب" data-de="Web"></span>
+                    </div>
+                </div>
+
+                <div class="media-card reveal">
+                    <div class="media-icon">🎙️</div>
+                    <div class="media-content">
+                        <h4 data-en="Radio & Podcasts" data-fa="رادیو و پادکست" data-de="Radio & Podcasts"></h4>
+                        <p data-en="Guest appearances on radio shows and technology podcasts" data-fa="حضور به عنوان مهمان در برنامه‌های رادیویی و پادکست‌های فناوری" data-de="Gastauftritte in Radiosendungen und Technologie-Podcasts"></p>
+                        <span class="media-type" data-en="Audio" data-fa="صوتی" data-de="Audio"></span>
+                    </div>
+                </div>
+
+                <div class="media-card reveal">
+                    <div class="media-icon">🎬</div>
+                    <div class="media-content">
+                        <h4 data-en="Documentary Features" data-fa="مستندها" data-de="Dokumentationen"></h4>
+                        <p data-en="Featured in documentaries about innovation and young entrepreneurs" data-fa="حضور در مستندهای مربوط به نوآوری و کارآفرینان جوان" data-de="Auftritte in Dokumentationen über Innovation und junge Unternehmer"></p>
+                        <span class="media-type" data-en="Film" data-fa="فیلم" data-de="Film"></span>
+                    </div>
+                </div>
+
+                <div class="media-card reveal">
+                    <div class="media-icon">📱</div>
+                    <div class="media-content">
+                        <h4 data-en="Social Media" data-fa="شبکه‌های اجتماعی" data-de="Soziale Medien"></h4>
+                        <p data-en="Active presence and viral content across major social platforms" data-fa="حضور فعال و محتوای پربازدید در پلتفرم‌های اجتماعی اصلی" data-de="Aktive Präsenz und virale Inhalte auf wichtigen sozialen Plattformen"></p>
+                        <span class="media-type" data-en="Digital" data-fa="دیجیتال" data-de="Digital"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label" data-en="Gallery" data-fa="گالری" data-de="Galerie"></div>
+                <h2 class="section-title font-display" data-en="Photo Gallery" data-fa="گالری تصاویر" data-de="Fotogalerie"></h2>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">📸</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">🏆</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">🤖</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">🎤</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">💡</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">🔬</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">🎓</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo font-display" data-en="Mohammadreza Bahmani" data-fa="محمدرضا بهمنی" data-de="Mohammadreza Bahmani"></div>
+            
+            <div class="footer-links">
+                <a href="#awards" class="footer-link" data-en="Awards" data-fa="افتخارات" data-de="Auszeichnungen"></a>
+                <a href="#patents" class="footer-link" data-en="Patents" data-fa="اختراعات" data-de="Patente"></a>
+                <a href="#robots" class="footer-link" data-en="Robots" data-fa="ربات‌ها" data-de="Roboter"></a>
+                <a href="#media" class="footer-link" data-en="Media" data-fa="رسانه" data-de="Medien"></a>
+                <a href="#gallery" class="footer-link" data-en="Gallery" data-fa="گالری" data-de="Galerie"></a>
+            </div>
+
+            <p class="footer-copy">© 2025 Mohammadreza Bahmani. <span data-en="All Rights Reserved." data-fa="تمامی حقوق محفوظ است." data-de="Alle Rechte vorbehalten."></span></p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Switcher
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const translatableElements = document.querySelectorAll('[data-en]');
+
+        function setLanguage(lang) {
+            // Update active button
+            langBtns.forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Update RTL
+            if (lang === 'fa') {
+                document.body.classList.add('rtl');
+                document.documentElement.dir = 'rtl';
+                document.documentElement.lang = 'fa';
+            } else {
+                document.body.classList.remove('rtl');
+                document.documentElement.dir = 'ltr';
+                document.documentElement.lang = lang;
+            }
+
+            // Update all translatable elements
+            translatableElements.forEach(el => {
+                const text = el.dataset[lang];
+                if (text) {
+                    el.textContent = text;
+                }
+            });
+
+            // Store preference
+            localStorage.setItem('preferredLang', lang);
+        }
+
+        // Language button click handlers
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                setLanguage(btn.dataset.lang);
+            });
+        });
+
+        // Load saved language preference
+        const savedLang = localStorage.getItem('preferredLang') || 'en';
+        setLanguage(savedLang);
+
+        // Scroll reveal animation
+        function reveal() {
+            const reveals = document.querySelectorAll('.reveal');
+            
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    el.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
